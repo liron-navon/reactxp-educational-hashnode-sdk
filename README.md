@@ -1,6 +1,6 @@
 # Reactxp Educational Hashnode SDK
 
-You can check out the full documentation and examples here: [https://trusting-brown-a1fbec.netlify.com](https://trusting-brown-a1fbec.netlify.com)
+You can check out the full documentation and examples here: [https://reactxp-educational-hashnode-sdk.netlify.com](https://reactxp-educational-hashnode-sdk.netlify.com)
 
 ---
 
