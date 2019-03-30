@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    // specify types to use globals
+    "types": [
+      "react",
+      "jest"
+    ],
+    // the output will be es5
+    "target": "es5",
+    // our modules are commonjs
+    "module": "commonjs",
+    // we add jsx from react to allow tsx files
+    "jsx": "react",
+    // add declaration files
+    "declaration": true,
+    // create source maps
+    "sourceMap": true,
+    // don't emit, since we use webpack to process the typescript
+    "noEmit": true,
+    // strict mode
+    "strict": true,
+    // how to resolve modules
+    "moduleResolution": "node",
+    // the base url to process
+    "baseUrl": "./",
+    // allows to import stuff using the raw-loader which have no default export
+    "allowSyntheticDefaultImports": true,
+    // it helps babel resolve modules (since we use babel AND typescript)
+    "esModuleInterop": true,
+    // skip typechecking libraries, prevents libraries types from breaking the build
+    "skipLibCheck": true,
+    // creates import helpers, used by helper ts libraries like docgen
+    "importHelpers": true,
+    // allow full support for iterations
+    "downlevelIteration": true,
+    // file imports will be case sensitive
+    "forceConsistentCasingInFileNames": true,
+    // improves nullable check
+    "strictNullChecks": true,
+    // don't use implicit this, you must use this.propName
+    "noImplicitThis": true,
+    // report errors for unused local variables
+    "noUnusedLocals": true
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "storybook-static",
+    "scripts"
+  ]
+}

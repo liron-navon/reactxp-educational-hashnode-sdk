@@ -1,0 +1,15 @@
+* {
+    /* use the right UI for the operating system */
+    font-family: 'Segoe UI',  /* for windows */
+    'system-ui', /* for other operating systems */
+    sans-serif;  /* fallback */
+
+    /* there is no outline in react native and mobile */
+    outline: none;
+}
+
+/* react native app containers are flex/column */
+.app-container {
+    display: flex;
+    flex-direction: column;
+}
