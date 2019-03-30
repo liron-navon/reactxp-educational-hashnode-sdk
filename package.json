@@ -23,7 +23,7 @@
     "test:web": "jest --config='jest.config.web.js'",
     "test:mobile": "jest --config='jest.config.mobile.js'",
     "test": "npm run test:web",
-    "prepublish": "npm run storybook:build && npm run build:publish"
+    "prepublish": "npm run build:publish"
   },
   "eslintConfig": {
     "extends": "react-app"
