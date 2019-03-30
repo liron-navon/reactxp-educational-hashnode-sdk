@@ -1,6 +1,6 @@
 {
   "name": "reactxp-educational-hashnode-sdk",
-  "description": "a native multi platform components library built with expo for a hashnode post",
+  "description": "A native multi platform SDK built with reactxp for a hashnode post",
   "version": "0.0.1",
   "private": false,
   "main": "dist/index.js",
