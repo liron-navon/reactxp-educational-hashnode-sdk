@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Card from './Card';
-import {Text, Platform} from 'reactxp';
+import {Text} from 'reactxp';
 
 test(`Card renders correctly`, () => {
     const tree = renderer.create((
@@ -11,5 +11,5 @@ test(`Card renders correctly`, () => {
             </Text>
         </Card>
     )).toJSON();
-    expect(tree).toMatchSnapshot(Platform.getType());
+    expect(tree).toMatchSnapshot();
 });

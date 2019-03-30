@@ -1,7 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import VirtualList from './VirtualList';
-import {Platform} from 'reactxp';
 
 const items = [
     {
@@ -18,5 +17,5 @@ test(`VirtualList renders correctly`, () => {
             itemList={items}/>
     )
         .toJSON();
-    expect(tree).toMatchSnapshot(Platform.getType());
+    expect(tree).toMatchSnapshot();
 });

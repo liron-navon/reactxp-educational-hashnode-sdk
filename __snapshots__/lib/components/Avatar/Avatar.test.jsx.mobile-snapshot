@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar renders correctly: ios 1`] = `
+exports[`Avatar renders correctly 1`] = `
 <Image
   onError={[Function]}
   resizeMode="contain"
