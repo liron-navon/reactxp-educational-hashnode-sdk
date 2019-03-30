@@ -1,5 +1,9 @@
 # Reactxp Educational Hashnode SDK
 
+You can check out the full documentation and examples here: [https://trusting-brown-a1fbec.netlify.com](https://trusting-brown-a1fbec.netlify.com)
+
+---
+
 All of the components in this library can be used on react-native (android/ios) and on the web thanks to reactxp.
 
 This is a demo components and logic package to show how to build a cross platform SDK with reactXP.
