@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VirtualList renders correctly: ios 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+      undefined,
+    ]
+  }
+>
+  <RCTScrollView
+    automaticallyAdjustContentInsets={false}
+    bounces={true}
+    keyboardShouldPersistTaps="never"
+    onLayout={[Function]}
+    onScroll={[Function]}
+    removeClippedSubviews={false}
+    scrollEnabled={true}
+    scrollEventThrottle={32}
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "height": 50,
+          }
+        }
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;

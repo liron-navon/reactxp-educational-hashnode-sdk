@@ -6,14 +6,6 @@ interface ViewStyleMap {
 interface ViewStyleRuleSet {
     [className: string]: Types.StyleRuleSet<styleTypesUnion>;
 }
-export declare const createStyleSheet: {
-    (stylesObject: ViewStyleMap): ViewStyleRuleSet;
-    displayName: string;
-    __docgenInfo: {
-        "description": string;
-        "displayName": string;
-        "props": {};
-    };
-};
+export declare const createStyleSheet: (stylesObject: ViewStyleMap) => ViewStyleRuleSet;
 export declare const optionalStyle: (test: boolean, style: any) => Types.StyleRuleSet<styleTypesUnion>;
 export {};

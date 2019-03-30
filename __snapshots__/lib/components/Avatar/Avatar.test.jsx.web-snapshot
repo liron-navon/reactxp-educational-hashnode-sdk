@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar renders correctly: web 1`] = `
+<div
+  onMouseUp={[Function]}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "backgroundImage": "url(\\"😓\\")",
+      "backgroundPosition": "center center",
+      "backgroundRepeat": "no-repeat",
+      "backgroundSize": "contain",
+      "borderColor": "#e10050",
+      "borderRadius": 50,
+      "borderStyle": "solid",
+      "borderWidth": 2,
+      "display": "flex",
+      "flexGrow": 0,
+      "flexShrink": 0,
+      "overflow": "visible",
+      "position": "relative",
+    }
+  }
+/>
+`;

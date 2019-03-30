@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput renders correctly: web 1`] = `
+<div
+  role="none"
+  style={
+    Object {
+      "alignItems": "stretch",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexGrow": 0,
+      "flexShrink": 0,
+      "overflow": "hidden",
+      "position": "relative",
+    }
+  }
+>
+  <input
+    disabled={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onInput={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    onPaste={[Function]}
+    size={1}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "borderColor": "rgba(0,0,0,0.2)",
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "display": "flex",
+        "flexBasis": "auto",
+        "flexDirection": "row",
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": 40,
+        "outline": "none",
+        "overflowX": "hidden",
+        "overflowY": "auto",
+        "padding": 8,
+        "position": "relative",
+        "resize": "none",
+      }
+    }
+    type="text"
+    value=""
+  />
+</div>
+`;

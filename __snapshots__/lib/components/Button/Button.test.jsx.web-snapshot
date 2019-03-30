@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly: web 1`] = `
+<button
+  onBlur={[Function]}
+  onClick={[Function]}
+  onContextMenu={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  role="button"
+  style={
+    Object {
+      "alignItems": "stretch",
+      "appRegion": "no-drag",
+      "backgroundColor": "transparent",
+      "borderColor": "transparent",
+      "borderStyle": "solid",
+      "borderWidth": "0",
+      "cursor": "pointer",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexGrow": 0,
+      "flexShrink": 0,
+      "justifyContent": "center",
+      "margin": 0,
+      "overflow": "hidden",
+      "padding": 0,
+      "position": "relative",
+      "textAlign": "left",
+    }
+  }
+>
+  <div
+    role="none"
+    style={
+      Object {
+        "alignItems": "stretch",
+        "backgroundColor": "lightgrey",
+        "borderRadius": 4,
+        "boxShadow": "2px 2px 3px 0px rgba(0,0,0,0.5)",
+        "display": "flex",
+        "elevation": 1,
+        "flexDirection": "column",
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "margin": 16,
+        "opacity": "1",
+        "overflow": "hidden",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "black",
+          "cursor": "inherit",
+          "display": "inline",
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "fontSize": 16,
+          "marginBottom": 8,
+          "marginLeft": 16,
+          "marginRight": 16,
+          "marginTop": 8,
+          "overflow": "hidden",
+          "overflowWrap": "break-word",
+          "position": "relative",
+          "textAlign": "center",
+          "whiteSpace": "pre-wrap",
+        }
+      }
+    />
+  </div>
+</button>
+`;

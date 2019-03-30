@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput renders correctly: ios 1`] = `
+<View>
+  <TextInput
+    allowFontScaling={true}
+    blurOnSubmit={true}
+    editable={true}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    onKeyPress={[Function]}
+    onPaste={[Function]}
+    onScroll={[Function]}
+    onSelectionChange={[Function]}
+    style={
+      Array [
+        Object {
+          "borderWidth": 0,
+          "padding": 0,
+        },
+        Object {
+          "borderColor": "rgba(0,0,0,0.2)",
+          "borderWidth": 1,
+          "height": 40,
+          "padding": 8,
+        },
+      ]
+    }
+    textBreakStrategy="simple"
+    underlineColorAndroid="transparent"
+    value=""
+  />
+</View>
+`;

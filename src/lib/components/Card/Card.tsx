@@ -6,7 +6,7 @@ import {
 } from 'reactxp';
 import theme from '../../theming/theme';
 
-// the prop types for the button
+// the prop types for the card
 interface CardProps extends Types.ViewProps {
 }
 

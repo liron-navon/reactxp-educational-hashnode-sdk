@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders correctly: ios 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "borderColor": "rgba(0,0,0,0.2)",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "elevation": 1,
+        "margin": 8,
+        "padding": 8,
+        "shadowColor": "rgba(0,0,0,0.5)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 2,
+        },
+        "shadowRadius": 3,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    disableContextMenu={false}
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+      ]
+    }
+    textBreakStrategy="simple"
+  >
+    Hello world
+  </Text>
+</View>
+`;

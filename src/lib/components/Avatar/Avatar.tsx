@@ -6,11 +6,11 @@ import {
 } from 'reactxp';
 import theme from '../../theming/theme';
 
-// the prop types for the button
+// the prop types for the avatar
 interface AvatarProps extends Types.ImageProps {
 }
 
-/** A simple card component, used to help defining the layout */
+/** A simple Avatar component, used to display a round image */
 const Avatar = ({style,...imageProps}: AvatarProps) => {
     const baseStyle = Styles.createViewStyle({
         borderColor: theme.colors.primary,

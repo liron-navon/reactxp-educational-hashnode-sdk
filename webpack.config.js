@@ -2,9 +2,13 @@ const path = require('path');
 const packageJson = require('./package');
 const camelCase = require('lodash/camelCase');
 
+// we can get the dist directory from the package.json
 const [distDirectory] = packageJson.main.trim().split('/');
+
+// check if this is a production build
 const isProduction = process.env.NODE_ENV === 'production';
 
+// set the platform, we will use it to generate platform-specific builds
 const platform = process.env.RN_PLATFORM;
 global.__PLATFORM__ = platform;
 
@@ -47,7 +51,6 @@ const config = {
             }
         ]
     },
-    plugins: [],
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },

@@ -23,6 +23,11 @@ interface ButtonProps extends Types.ButtonProps {
     disableHoverStyle?: boolean
 }
 
+// the state interface for the button
+interface ButtonState {
+    isPressed: boolean
+}
+
 function createButtonStyles() {
     const styles = createStyleSheet({
         root: {
@@ -86,7 +91,7 @@ function createButtonStyles() {
 }
 
 /** A simple button component */
-class Button extends Component<ButtonProps> {
+class Button extends Component<ButtonProps, ButtonState> {
     state = {
         isPressed: false
     };

@@ -10,8 +10,11 @@ interface ButtonProps extends Types.ButtonProps {
     /** disable the hover style, hover style only work on the web */
     disableHoverStyle?: boolean;
 }
+interface ButtonState {
+    isPressed: boolean;
+}
 /** A simple button component */
-declare class Button extends Component<ButtonProps> {
+declare class Button extends Component<ButtonProps, ButtonState> {
     state: {
         isPressed: boolean;
     };

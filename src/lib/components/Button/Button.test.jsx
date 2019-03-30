@@ -1,8 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Button from './Button';
+import {Platform} from 'reactxp';
 
-test('renders correctly', () => {
+test(`Button renders correctly`, () => {
     const tree = renderer.create(<Button/>).toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot(Platform.getType());
 });

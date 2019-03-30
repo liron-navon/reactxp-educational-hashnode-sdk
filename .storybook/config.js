@@ -11,10 +11,10 @@ function loadStories() {
     rootEl.classList.add('app-container');
 
     // make sure the home page is loaded first - so when we build it will be the default page
-    require('../src/lib/wiki/home.story');
-    requireAll(require.context('../src/lib/wiki', true, /.story\.jsx?$/));
-    requireAll(require.context('../src/lib/components', true, /.story\.jsx?$/));
-    requireAll(require.context('../src/lib/utils', true, /.story\.jsx?$/));
+    require('../src/wiki/home.story');
+    requireAll(require.context('../src/lib/wiki', true, /.story\.(ts|js)x?$/));
+    requireAll(require.context('../src/lib/components', true, /.story\.(ts|js)x?$/));
+    requireAll(require.context('../src/lib/utils', true, /.story\.(ts|js)x?$/));
 }
 
 configure(loadStories, module);

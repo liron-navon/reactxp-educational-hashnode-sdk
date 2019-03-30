@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import VirtualList from './VirtualList';
+import {Platform} from 'reactxp';
 
 const items = [
     {
@@ -10,12 +11,12 @@ const items = [
     }
 ];
 
-test('renders correctly', () => {
+test(`VirtualList renders correctly`, () => {
     const tree = renderer.create(
         <VirtualList
             renderItem={({text}) => (<div>{text}</div>)}
             itemList={items}/>
     )
         .toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot(Platform.getType());
 });

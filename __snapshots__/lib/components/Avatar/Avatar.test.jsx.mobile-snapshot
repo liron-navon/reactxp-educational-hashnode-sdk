@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar renders correctly: ios 1`] = `
+<Image
+  onError={[Function]}
+  resizeMode="contain"
+  source={
+    Object {
+      "headers": undefined,
+      "uri": "😓",
+    }
+  }
+  style={
+    Array [
+      Object {
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "height": undefined,
+        "overflow": "hidden",
+        "width": undefined,
+      },
+      Array [
+        Object {
+          "borderColor": "#e10050",
+          "borderRadius": 50,
+          "borderWidth": 2,
+        },
+        undefined,
+      ],
+    ]
+  }
+/>
+`;

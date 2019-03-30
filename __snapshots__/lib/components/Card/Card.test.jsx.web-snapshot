@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders correctly: web 1`] = `
+<div
+  role="none"
+  style={
+    Object {
+      "alignItems": "stretch",
+      "backgroundColor": "white",
+      "borderColor": "rgba(0,0,0,0.2)",
+      "borderRadius": 4,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "boxShadow": "2px 2px 3px 0px rgba(0,0,0,0.5)",
+      "display": "flex",
+      "elevation": 1,
+      "flexDirection": "column",
+      "flexGrow": 0,
+      "flexShrink": 0,
+      "margin": 8,
+      "overflow": "hidden",
+      "padding": 8,
+      "position": "relative",
+    }
+  }
+>
+  <div
+    data-text-as-pseudo-element="Hello world"
+    style={
+      Object {
+        "cursor": "inherit",
+        "display": "inline",
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "overflow": "hidden",
+        "overflowWrap": "break-word",
+        "position": "relative",
+        "whiteSpace": "pre-wrap",
+      }
+    }
+  />
+</div>
+`;

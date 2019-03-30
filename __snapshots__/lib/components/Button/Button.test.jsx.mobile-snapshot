@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly: ios 1`] = `
+<View
+  accessibilityComponentType="button"
+  accessibilityTraits={
+    Array [
+      "button",
+    ]
+  }
+  importantForAccessibility="yes"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "stretch",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "justifyContent": "center",
+      "margin": 0,
+      "opacity": 1,
+      "overflow": "hidden",
+      "padding": 0,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "lightgrey",
+        "borderRadius": 4,
+        "elevation": 1,
+        "margin": 16,
+        "shadowColor": "rgba(0,0,0,0.5)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 2,
+        },
+        "shadowRadius": 3,
+      }
+    }
+  >
+    <Text
+      disableContextMenu={false}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Array [
+            Object {
+              "fontSize": 16,
+              "marginHorizontal": 16,
+              "marginVertical": 8,
+              "textAlign": "center",
+            },
+            Object {
+              "color": "black",
+            },
+            undefined,
+          ],
+        ]
+      }
+      textBreakStrategy="simple"
+    />
+  </View>
+</View>
+`;
