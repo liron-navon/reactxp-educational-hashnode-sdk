@@ -73,7 +73,7 @@ const ThemeComponent = () => {
     )
 };
 
-storiesOf('theming/theming', module)
+storiesOf('theming', module)
     .add(
         'default',
         () => <ThemeComponent/>,

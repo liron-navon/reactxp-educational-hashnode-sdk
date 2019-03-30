@@ -12,9 +12,11 @@ function loadStories() {
 
     // make sure the home page is loaded first - so when we build it will be the default page
     require('../src/wiki/home.story');
-    requireAll(require.context('../src/lib/wiki', true, /.story\.(ts|js)x?$/));
+    // importing each section individually allows me to set their order in storybook
+    requireAll(require.context('../src/wiki', true, /.story\.(ts|js)x?$/));
     requireAll(require.context('../src/lib/components', true, /.story\.(ts|js)x?$/));
     requireAll(require.context('../src/lib/utils', true, /.story\.(ts|js)x?$/));
+    requireAll(require.context('../src/lib/theming', true, /.story\.(ts|js)x?$/));
 }
 
 configure(loadStories, module);
