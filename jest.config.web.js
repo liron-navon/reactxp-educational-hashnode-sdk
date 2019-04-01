@@ -1,3 +1,4 @@
+// Web jest setup
 module.exports = {
     "moduleFileExtensions": [
         "ts",
@@ -9,8 +10,7 @@ module.exports = {
     "testMatch": null,
     "testRegex": "\\.(test|web-test).(ts|js)x$",
     "transform": {
-        "^.+\\.(js|ts)x?$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
-        "^.+\\.jsx?$": "babel-jest"
+        "^.+\\.(js|ts)x?$": "babel-jest"
     },
     "testPathIgnorePatterns": [
         "\\.snap$",

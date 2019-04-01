@@ -1,3 +1,4 @@
+// Mobile jest setup
 module.exports = {
     "preset": "react-native",
     "moduleFileExtensions": [
@@ -10,7 +11,7 @@ module.exports = {
     "testMatch": null,
     "testRegex": "\\.(test|mobile-test).(ts|js)x$",
     "transform": {
-        "^.+\\.(js|tsx?)$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
+        "^.+\\.(js|ts)x?$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
         "^.+\\.jsx?$": "babel-jest"
     },
     "testPathIgnorePatterns": [

@@ -8,9 +8,6 @@ function requireAll(requireContext) {
 }
 
 function loadStories() {
-    const rootEl = document.getElementById('root');
-    rootEl.classList.add('app-container');
-
     // make sure the home page is loaded first - so when we build it will be the default page
     require('../src/wiki/home.story');
     // importing each section individually allows me to set their order in storybook
