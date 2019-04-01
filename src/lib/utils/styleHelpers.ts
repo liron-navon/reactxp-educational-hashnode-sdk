@@ -1,6 +1,6 @@
 import {Styles, Types} from 'reactxp'
 
-type styleTypesUnion =
+export type StyleTypesUnion =
     Types.ViewStyle
     | Types.ButtonStyle
     | Types.TextStyle
@@ -8,13 +8,13 @@ type styleTypesUnion =
     | Types.PickerStyle
 
 // the unprocessed styles
-interface ViewStyleMap {
-    [className: string]: styleTypesUnion
+export interface ViewStyleMap {
+    [className: string]: StyleTypesUnion
 }
 
 // the processed styles
-interface ViewStyleRuleSet {
-    [className: string]:  Types.StyleRuleSet<styleTypesUnion>
+export interface ViewStyleRuleSet {
+    [className: string]:  Types.StyleRuleSet<StyleTypesUnion>
 }
 
 // creates a stylesheet
@@ -29,6 +29,6 @@ export const createStyleSheet = (stylesObject: ViewStyleMap): ViewStyleRuleSet =
 };
 
 // pass a boolean and a style to make it optional
-export const optionalStyle = (test: boolean, style: styleTypesUnion | Types.StyleRuleSet<styleTypesUnion>| any): styleTypesUnion | Types.StyleRuleSet<styleTypesUnion> => {
+export const optionalStyle = (test: boolean, style: StyleTypesUnion | Types.StyleRuleSet<StyleTypesUnion>| any): StyleTypesUnion | Types.StyleRuleSet<StyleTypesUnion> => {
     return test ? style : {};
 };

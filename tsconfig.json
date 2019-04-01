@@ -40,7 +40,9 @@
     // don't use implicit this, you must use this.propName
     "noImplicitThis": true,
     // report errors for unused local variables
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    // allow to use any if no type is set
+    "noImplicitAny": false
   },
   "exclude": [
     "dist",

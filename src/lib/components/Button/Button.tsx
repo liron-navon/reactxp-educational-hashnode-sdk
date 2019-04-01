@@ -7,7 +7,7 @@ import {
     Animated,
     Component
 } from 'reactxp';
-import {createStyleSheet, optionalStyle} from '../../utils/styleHelpers';
+import {createStyleSheet, optionalStyle, ViewStyleRuleSet} from '../../utils/styleHelpers';
 import theme from "../../theming/theme";
 import {isReactNative} from "../../utils/platform";
 
@@ -28,67 +28,63 @@ interface ButtonState {
     isPressed: boolean
 }
 
-function createButtonStyles() {
-    const styles = createStyleSheet({
-        root: {
-            padding: 0,
-            margin: 0
-        },
-        buttonBase: {
-            margin: 16,
-            borderRadius: 4,
-            ...theme.shadow(1)
-        },
-        buttonPressed: {
-            ...theme.shadow(2)
+const createStyles = () => createStyleSheet({
+    root: {
+        padding: 0,
+        margin: 0
+    },
+    buttonBase: {
+        margin: 16,
+        borderRadius: 4,
+        ...theme.shadow(1)
+    },
+    buttonPressed: {
+        ...theme.shadow(2)
+    },
+    text: {
+        fontSize: 16,
+        marginVertical: theme.spacing,
+        marginHorizontal: theme.spacing * 2,
+        textAlign: 'center'
+    }
+});
+
+// create the type styles for the button
+const buttonTypeStyles = {
+    default: () => createStyleSheet({
+        button: {
+            backgroundColor: theme.colors.grey,
         },
         text: {
-            fontSize: 16,
-            marginVertical: theme.spacing,
-            marginHorizontal: theme.spacing * 2,
-            textAlign: 'center'
+            color: theme.colors.text
         }
-    });
-
-// add some extra styling for different button types
-    const buttonTypeStyles = {
-        default: createStyleSheet({
-            button: {
-                backgroundColor: theme.colors.grey,
-            },
-            text: {
-                color: theme.colors.text
-            }
-        }),
-        primary: createStyleSheet({
-            button: {
-                backgroundColor: theme.colors.primary,
-            },
-            text: {
-                color: theme.colors.textContrast
-            }
-        }),
-        secondary: createStyleSheet({
-            button: {
-                backgroundColor: theme.colors.secondary,
-            },
-            text: {
-                color: theme.colors.textContrast
-            }
-        }),
-        flat: createStyleSheet({
-            button: {
-                backgroundColor: theme.colors.transparent,
-                ...theme.shadow(0)
-            },
-            text: {
-                color: theme.colors.text
-            }
-        })
-    };
-
-    return {styles, buttonTypeStyles};
-}
+    }),
+    primary: () => createStyleSheet({
+        button: {
+            backgroundColor: theme.colors.primary,
+        },
+        text: {
+            color: theme.colors.textContrast
+        }
+    }),
+    secondary: () => createStyleSheet({
+        button: {
+            backgroundColor: theme.colors.secondary,
+        },
+        text: {
+            color: theme.colors.textContrast
+        }
+    }),
+    flat: () => createStyleSheet({
+        button: {
+            backgroundColor: theme.colors.transparent,
+            ...theme.shadow(0)
+        },
+        text: {
+            color: theme.colors.text
+        }
+    })
+} as { [type: string]: () =>  ViewStyleRuleSet};
 
 /** A simple button component */
 class Button extends Component<ButtonProps, ButtonState> {
@@ -126,16 +122,16 @@ class Button extends Component<ButtonProps, ButtonState> {
     render() {
         // separate the props we handle manually and the native rx props
         const {
-            type, titleStyle, upper,
+            type = 'default', titleStyle, upper,
             disableHoverStyle, onHoverStart,
             onHoverEnd, onPressIn, onPressOut,
             style, title, ...buttonProps
         } = this.props;
         const {isPressed} = this.state;
-        const {styles, buttonTypeStyles} = createButtonStyles();
+        const styles = createStyles();
 
         // set the button type
-        const typeStyle = buttonTypeStyles[type || 'default'] || buttonTypeStyles.default;
+        const typeStyle = (buttonTypeStyles[type] || buttonTypeStyles.default)();
 
         // create animated style
         const animatedButtonStyle = isReactNative() || isPressed
