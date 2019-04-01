@@ -7,7 +7,7 @@ module.exports = {
         "json"
     ],
     "testMatch": null,
-    "testRegex": "\\.test.(ts|js)x$",
+    "testRegex": "\\.(test|web-test).(ts|js)x$",
     "transform": {
         "^.+\\.(js|ts)x?$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
         "^.+\\.jsx?$": "babel-jest"
