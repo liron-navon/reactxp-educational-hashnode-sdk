@@ -55,7 +55,7 @@ const config = {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
     // these packages should be supplied by the project that uses this library
-    externals: ['react-native', 'react', 'react-dom'],
+    externals: ['react-native', 'react', 'react-dom', 'lodash'],
 };
 
 module.exports = config;

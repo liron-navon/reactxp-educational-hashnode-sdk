@@ -11,6 +11,7 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import {renderRootComponent, Card} from 'reactxp-educational-hashnode-sdk';
 
+/*for web it expects the selector ".app-container" to find the root element*/
 const wrappedRootView = renderRootComponent(
     () => (
         <Card>

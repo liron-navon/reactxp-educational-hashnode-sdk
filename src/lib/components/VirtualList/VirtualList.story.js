@@ -3,7 +3,7 @@ import {storiesOf} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import VirtualList from './VirtualList';
 
-storiesOf('components/VirtualList', module)
+storiesOf('components|VirtualList', module)
     .add(
         'default',
         () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import Avatar from './Avatar';
 
-storiesOf('components/Avatar', module)
+storiesOf('components|Avatar', module)
     .add('default',
         () => {
             const simpsons = [

@@ -73,9 +73,9 @@ const ThemeComponent = () => {
     )
 };
 
-storiesOf('theming', module)
+storiesOf('theming|theming', module)
     .add(
-        'default',
+        'theming',
         () => <ThemeComponent/>,
         {info: {disable: true}}
     );

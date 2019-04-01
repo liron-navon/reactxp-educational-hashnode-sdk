@@ -1,6 +1,7 @@
 import {configure, addDecorator, addParameters} from '@storybook/react';
 import {withInfo} from "@storybook/addon-info";
 import {withA11y} from '@storybook/addon-a11y';
+import packageJson from '../package';
 
 function requireAll(requireContext) {
     return requireContext.keys().map(requireContext);
@@ -31,7 +32,8 @@ addDecorator(withA11y);
 
 addParameters({
     options: {
-        name: 'Foo',
-        theme: themes.dark,
+        name: packageJson.name,
+        hierarchySeparator: /\//,
+        hierarchyRootSeparator: /\|/,
     },
 });

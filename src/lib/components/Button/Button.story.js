@@ -3,7 +3,7 @@ import {storiesOf} from '@storybook/react';
 import Button from './Button';
 import {action} from '@storybook/addon-actions';
 
-storiesOf('components/Button', module)
+storiesOf('components|Button', module)
     .add('default', () => {
         return (
             <Button

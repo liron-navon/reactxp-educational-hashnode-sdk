@@ -2,7 +2,7 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import Card from './Card';
 
-storiesOf('components/Card', module)
+storiesOf('components|Card', module)
     .add('default', () => {
         return (
             <Card>

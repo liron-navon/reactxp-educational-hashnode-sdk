@@ -3,7 +3,7 @@ import {storiesOf} from '@storybook/react';
 import TextInput from './TextInput';
 import {action} from '@storybook/addon-actions';
 
-storiesOf('components/TextInput', module)
+storiesOf('components|TextInput', module)
     .add('default', () => {
         return (
             <TextInput
